@@ -21,6 +21,10 @@ nav{
   width: 70%;
   margin: auto;
 }
+
+.form-search input{
+  width: 100%
+}
 /* MAIN */
 main{
   margin: 0;
