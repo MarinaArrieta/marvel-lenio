@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+body{
+  margin: 5px;
+  background-color: #0D0C0C;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header{
+  height: 45px;
+  background-color: yellow;
 }
+.marvel_logo{
+  height: 45px;
+  width: 80px;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* MAIN */
+main{
+  margin: 0;
+  padding: 0;
+}
+.conteiner{
+  padding: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.card{
+  position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 75%;
+    margin: 20px;
+
+}
+.card img{
+  width: 100%;
+
+}
+.name{
+  color: #ffeb3b;
+  position: absolute;
+    top: 81%;
+    left: 32px;
+    font-size: 22px;
+}
+/* FOOTER */
+footer{
+  text-align: center;
+  height: 27px;
+  padding-bottom: 8px;
 }
 
-.App-link {
-  color: #61dafb;
+.bottom {
+  color: #f9c995; 
+  text-decoration: none;
+  padding: 0 11px;
+  font-size: 23px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+abbr[title] {
+text-decoration: none;
+}
+
+@media only screen and (min-width:640px){
+
+  .conteiner{
+    display: block;
+    text-align: center;
+  } 
+  .card{
+    width: 40%;
   }
-  to {
-    transform: rotate(360deg);
+
+}
+
+@media only screen and (min-width:992px){
+  .card{
+    width: 20%;
   }
 }
