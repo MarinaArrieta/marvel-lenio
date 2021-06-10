@@ -2,14 +2,24 @@ body{
   margin: 5px;
   background-color: #0D0C0C;
 }
+
+/* HEADER */
 header{
   height: 45px;
   background-color: yellow;
 }
+nav{
+  display: flex;
+}
 .marvel_logo{
   height: 45px;
   width: 80px;
-
+}
+.form-search{
+  display: flex;
+  padding-bottom: 6px;
+  width: 70%;
+  margin: auto;
 }
 /* MAIN */
 main{

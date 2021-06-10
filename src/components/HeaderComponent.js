@@ -9,6 +9,9 @@ const HeaderComponent = ()=>{
 		            	<abbr className="tooltips" title="MARVEL">   
 		            	</abbr>
 		        	</a>
+		        	<form className="form-search">	
+		        		<input type="search" placeholder="Search"></input>
+		        	</form>
 				</nav>
 			</header>
 		)
