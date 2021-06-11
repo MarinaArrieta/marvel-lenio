@@ -1,40 +1,21 @@
-import logan from './logan.jpg';
-const MainComponent = ()=>{
+
+
+const MainComponent = ({title, characters})=>{
+
 	return(
 		<main>
 			<section className="conteiner">
-				<div className="card">
-					<img className="img" src={logan} alt="logan"/>
-					<div className="name">Logan</div>
-				</div>
-				<div className="card">
-					<img className="img" src={logan} alt="logan"/>
-					<div className="name">Logan</div>
-				</div>
-				<div className="card">
-					<img className="img" src={logan} alt="logan"/>
-					<div className="name">Logan</div>
-				</div>
-				<div className="card">
-					<img className="img" src={logan} alt="logan"/>
-					<div className="name">Logan</div>
-				</div>
-				<div className="card">
-					<img className="img" src={logan} alt="logan"/>
-					<div className="name">Logan</div>
-				</div>
-				<div className="card">
-					<img className="img" src={logan} alt="logan"/>
-					<div className="name">Logan</div>
-				</div>
-				<div className="card">
-					<img className="img" src={logan} alt="logan"/>
-					<div className="name">Logan</div>
-				</div>
-				<div className="card">
-					<img className="img" src={logan} alt="logan"/>
-					<div className="name">Logan</div>
-				</div>
+				<h1  class="rojo">{title}</h1>
+				{ characters.map((character)=>(
+
+						<div className="card">
+							<img className="img" src={character.imagen} alt="logan"/>
+							<div className="name">{character.name}</div>
+						</div>
+
+					))}
+
+
 			</section>
 		</main>
 		)
