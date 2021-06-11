@@ -13,17 +13,6 @@ const FooterComponent = ()=>{
 		                </i>
 		            </abbr>
 		        </a>
-		        <a className="bottom" href="https://www.instagram.com/marina.arrieta_/">
-		            <abbr className="tooltips" title="INSTAGRAM">
-		                <i className="fab fa-instagram">
-		                </i>
-		            </abbr>
-		        </a>
-		        <a className="bottom" href="developer.html">
-		            <abbr className="tooltips" title="DEVELOPER">
-		                <i className="fas fa-code"></i>
-		            </abbr>
-		        </a>
 		        <a className="bottom" href="https://www.marvel.com/">
 		            <abbr className="tooltips" title="MARVEL">
 		                <i className="fas fa-mask"></i>
