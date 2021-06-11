@@ -1,11 +1,11 @@
 
 
-const MainComponent = ({title, characters})=>{
+const MainComponent = ({characters})=>{
 
 	return(
 		<main>
 			<section className="conteiner">
-				<h1  class="rojo">{title}</h1>
+
 				{ characters.map((character)=>(
 
 						<div className="card">

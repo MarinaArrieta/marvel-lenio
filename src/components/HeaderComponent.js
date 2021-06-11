@@ -4,7 +4,7 @@ const HeaderComponent = ()=>{
 	return (
 			<header>
 				<nav>
-					<a className="bottom" href="https://www.marvel.com/">
+					<a className="logo-container" href="https://www.marvel.com/">
 						<img className="marvel_logo" src={marvel} alt="marvel"/>
 		            	<abbr className="tooltips" title="MARVEL">   
 		            	</abbr>

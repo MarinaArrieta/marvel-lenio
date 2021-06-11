@@ -1,25 +1,34 @@
 body{
-  margin: 5px;
-  background-color: #0D0C0C;
+  background-color:  #ecf0f1;
 }
 
 /* HEADER */
 header{
-  height: 45px;
-  background-color: yellow;
+
+  background-color:  #fbfcfc;
+  padding: 7px;
+  border-bottom: 2px solid #cac5c56b;
 }
+
 nav{
   display: flex;
 }
+.logo-container{
+  border-right:  2px solid #cac5c56b;
+  padding-right: 30px;
+  padding-left: 41px;
+}
 .marvel_logo{
-  height: 45px;
+
   width: 80px;
 }
 .form-search{
   display: flex;
   padding-bottom: 6px;
-  width: 70%;
+  width: 50%;
   margin: auto;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .form-search input{
