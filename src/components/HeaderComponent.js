@@ -1,5 +1,5 @@
 import marvel from './marvel.jpg';
-
+import FormSearchComponent from './FormSearchComponent'
 const HeaderComponent = ()=>{
 	return (
 			<header>
@@ -9,9 +9,8 @@ const HeaderComponent = ()=>{
 		            	<abbr className="tooltips" title="MARVEL">   
 		            	</abbr>
 		        	</a>
-		        	<form className="form-search">	
-		        		<input type="search" placeholder="Search"></input>
-		        	</form>
+		        	<FormSearchComponent/>
+
 				</nav>
 			</header>
 		)

@@ -30,6 +30,22 @@ nav{
   margin-top: 0;
   margin-bottom: 0;
 }
+.form-icon{
+  color: #c4bdbda3;
+  width: 15px;
+  font-size: 24px;
+  padding-top: 5px;
+}
+
+.form-icon-search{
+  padding-right: 20px;
+}
+.form-icon-star{
+  
+  padding-left: 20px;
+   padding-right: 30px;
+  border-right:  2px solid #cac5c56b;
+}
 
 .form-search input{
   width: 100%
