@@ -6,17 +6,17 @@ body{
 header{
 
   background-color:  #fbfcfc;
-  padding: 7px;
   border-bottom: 2px solid #cac5c56b;
 }
 
 nav{
   display: flex;
+  width: 100%;
 }
 .logo-container{
   border-right:  2px solid #cac5c56b;
-  padding-right: 30px;
-  padding-left: 41px;
+  padding-right: 23px;
+  margin: 7px 16px;
 }
 .marvel_logo{
 
@@ -24,11 +24,13 @@ nav{
 }
 .form-search{
   display: flex;
-  padding-bottom: 6px;
-  width: 50%;
-  margin: auto;
-  margin-top: 0;
-  margin-bottom: 0;
+  padding-bottom: 2px;
+  width: 62%;
+  margin: 7px;
+}
+.form-search input{
+  width: 100%;
+  border: 0;
 }
 .form-icon{
   color: #c4bdbda3;
@@ -43,13 +45,11 @@ nav{
 .form-icon-star{
   
   padding-left: 20px;
-   padding-right: 30px;
+  padding-right: 28px;
   border-right:  2px solid #cac5c56b;
+  margin-left: -9px;
 }
 
-.form-search input{
-  width: 100%
-}
 /* MAIN */
 main{
   margin: 0;
@@ -63,22 +63,36 @@ main{
 }
 .card{
   position: relative;
-    display: inline-block;
-    text-align: center;
-    width: 75%;
-    margin: 20px;
+  display: inline-block;
+  text-align: center;
+
+  width: 256px;
+  height: 380px;
+  overflow: hidden;
+
+  margin: 20px;
+  background: linear-gradient(200deg, #00000080, #0000 18%), linear-gradient(0deg, #00000080, #0000 20%);
+  opacity: 1;
 
 }
 .card img{
-  width: 100%;
-
+  min-height: 380px;
+  max-height: 380px;
 }
 .name{
-  color: #ffeb3b;
+  color: #fbfaf3;
   position: absolute;
-    top: 81%;
-    left: 32px;
-    font-size: 22px;
+  top: 88%;
+  left: 16px;
+  font-size: 14px;
+  background: black;
+}
+.icon-card-star{
+  position: absolute;
+  margin-top: 3px;
+  color: #fff;
+  font-size: 20px;
+  margin-left: 86%;
 }
 /* FOOTER */
 footer{
@@ -106,14 +120,18 @@ text-decoration: none;
     text-align: center;
   } 
   .card{
-    width: 40%;
+
   }
 
 }
 
 @media only screen and (min-width:992px){
+
+  .form-search{
+    width: 82%;
+  }
   .card{
-    width: 20%;
+
   }
 }
 

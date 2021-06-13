@@ -10,7 +10,6 @@ const HeaderComponent = ()=>{
 		            	</abbr>
 		        	</a>
 		        	<FormSearchComponent/>
-
 				</nav>
 			</header>
 		)
