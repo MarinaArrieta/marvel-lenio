@@ -3,7 +3,7 @@ import useFetch from '../useFetch'
 import { useEffect, useState } from 'react'
 import DetailComponent from './DetailComponent'
 
-const MainComponent = ()=>{
+const MainComponent = ({name_start})=>{
 
 
 
@@ -16,18 +16,25 @@ const MainComponent = ()=>{
   const final_url = `?apikey=${public_key}&hash=${hash}&ts=${ts}`
   const limit = "&limit=8"
 
-  const max_random = 1400
+  const max_random = 1200
   const min_random = 0
   const [ramdom_int, setRandom] = useState(0)
 
-  const offset = `&offset=${ramdom_int}`
+ 
 
   useEffect(()=>{
     setRandom(Math.floor(Math.random() * (max_random - min_random + 1)) + min_random)
   },[])
   
-  const url = marvel_api_url + url_personajes + final_url + limit +offset
-  const {data:characters, isPending, error } = useFetch(url)
+
+  
+  
+
+
+
+  const [request, setRequest] = useState(marvel_api_url + url_personajes + final_url + limit)
+  console.log(request)
+  const {data:characters, isPending, error } = useFetch(request,name_start,ramdom_int)
 
 	const comic_url = "http://gateway.marvel.com/v1/public/comics/53426" + final_url
 	const {data:comic, isPending:loading_comic,error:error_comic} = useFetch(comic_url)

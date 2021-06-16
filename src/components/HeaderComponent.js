@@ -1,6 +1,6 @@
 import marvel from './marvel.jpg';
 import FormSearchComponent from './FormSearchComponent'
-const HeaderComponent = ()=>{
+const HeaderComponent = ({cambiar_nombre})=>{
 	return (
 			<header>
 				<nav>
@@ -9,7 +9,7 @@ const HeaderComponent = ()=>{
 		            	<abbr className="tooltips" title="MARVEL">   
 		            	</abbr>
 		        	</a>
-		        	<FormSearchComponent/>
+		        	<FormSearchComponent cambiar_nombre = {cambiar_nombre}/>
 				</nav>
 			</header>
 		)

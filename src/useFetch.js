@@ -1,7 +1,17 @@
 //hook fuctions must start with use
 import {useState, useEffect} from 'react';
 
-const useFetch = (url)=>{
+const useFetch = (url,name="", offset=0)=>{
+
+    if (name.length > 0){
+        url = url + "&nameStartsWith=" + name
+        offset = 0
+    }
+
+    if (offset>0){
+         url = url + "&offset=" + offset
+    }
+
 
     const [data, setData] = useState(null);
     const [isPending, setIsPending] = useState(true)
