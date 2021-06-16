@@ -1,6 +1,6 @@
 const FormSearchComponent = ({cambiar_nombre})=>{
-	const search_input = document.getElementById("search-input");
 	const handleSubmit = (e)=>{
+		let search_input = document.getElementById("search-input");
 		e.preventDefault()
 		cambiar_nombre(search_input.value)
 	}
@@ -9,7 +9,7 @@ const FormSearchComponent = ({cambiar_nombre})=>{
 		    <form className="form-search" onSubmit={(e)=>handleSubmit(e)}>	
 		    	<i className="fas fa-search form-icon form-icon-search"></i>
 		        <input type="search" placeholder="Search" id="search-input"></input>
-		        <i className="far fa-star form-icon form-icon-star"></i>
+
 		    </form>
 		)
 }

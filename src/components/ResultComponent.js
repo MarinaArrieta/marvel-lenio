@@ -40,7 +40,7 @@ const ResultComponent = ({characters})=>{
 			</div>
 			{ characters.map((character)=>(
 					<div className="card" key={character.id} onClick={ ()=>handleClick(character.id, character.name)}>
-						<i className="far fa-star form-icon icon-card-star"></i>
+						
 						<img className="img" src={character.thumbnail.path + "."+ character.thumbnail.extension} alt="{character.name}"/>
 						<div className="name">{character.name}</div>
 					</div>

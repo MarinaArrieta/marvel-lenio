@@ -36,8 +36,8 @@ const MainComponent = ({name_start})=>{
   console.log(request)
   const {data:characters, isPending, error } = useFetch(request,name_start,ramdom_int)
 
-	const comic_url = "http://gateway.marvel.com/v1/public/comics/53426" + final_url
-	const {data:comic, isPending:loading_comic,error:error_comic} = useFetch(comic_url)
+	//const comic_url = "http://gateway.marvel.com/v1/public/comics/53426" + final_url
+	//const {data:comic, isPending:loading_comic,error:error_comic} = useFetch(comic_url)
 
 
 
@@ -46,7 +46,7 @@ const MainComponent = ({name_start})=>{
 		    { isPending && <div>loading...</div> }
      		{ error && <div>{error}</div> }
 			{ characters && <ResultComponent characters={characters.data.results}/> }
-			{ comic && <DetailComponent comic={comic.data.results[0] }/>}
+			
 		</main>
 		)
 } 
